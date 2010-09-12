@@ -1,0 +1,5 @@
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-09-12 09:18:09) [GET]
+Rendering pages/home
+Completed in 166ms (View: 163, DB: 0) | 200 OK [http://localhost/pages/home]
