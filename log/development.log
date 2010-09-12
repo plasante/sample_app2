@@ -601,3 +601,57 @@ Rendered layouts/_stylesheets (3.0ms)
 Rendered layouts/_header (1.0ms)
 Rendered layouts/_footer (0.0ms)
 Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-09-12 15:47:32) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (4.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 37ms (View: 33, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-09-12 15:47:36) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (3.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-09-12 15:47:41) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (3.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 19ms (View: 18, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-09-12 15:47:53) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (3.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-09-12 16:08:40) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (5.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 67ms (View: 63, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-09-12 16:08:42) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (3.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/signup]
