@@ -59,4 +59,9 @@ Spec::Runner.configure do |config|
   #
   # For more information take a look at Spec::Runner::Configuration and Spec::Runner
 
+	# To use the resulting test_sign_in function in all our tests
+	# After running test_sign_in the current_user will not be nil and signed_in? will be true
+	def test_sign_in(user)
+		controller.current_user = user
+	end
 end

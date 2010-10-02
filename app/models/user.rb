@@ -34,6 +34,11 @@ class User < ActiveRecord::Base
 		encrypted_password == encrypt(submitted_password)
 	end
 	
+	def remember_me!
+		self.remember_token = encrypt("#{salt}--#{Time.now.utc}")
+		save_without_validation
+	end
+	
 	# If password mismatch then return nil
 	def self.authenticate(email, submitted_password)
 		user = find_by_email(email)
@@ -43,8 +48,10 @@ class User < ActiveRecord::Base
 	
 	private
 		def encrypt_password
-			self.salt = make_salt
-			self.encrypted_password = encrypt(password)
+			unless password.nil?
+				self.salt = make_salt
+				self.encrypted_password = encrypt(password)
+			end
 		end
 		
 		# implementing a secure one-way hashing encryption
